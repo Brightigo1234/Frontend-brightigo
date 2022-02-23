@@ -20,7 +20,7 @@ const FAQ = () => {
       <Center py={'2rem'} w={'full'} mb={'1rem'}>
         <Text
           alignSelf={'center'}
-          pl={'2rem'}
+          textAlign='center'
           fontSize={{ base: '28px', md: '42px', lg: '42px' }}
           fontFamily={'Poppins'}
           fontWeight={'500'}
@@ -39,7 +39,7 @@ const FAQ = () => {
         <Accordion
           border={'1px solid #44337A'}
           bg='purple.50'
-          w={'5xl'}
+          w={{ base: '80vw', md: '60vw' }}
           defaultIndex={[0]}
           allowMultiple
         >
@@ -59,6 +59,7 @@ const FAQ = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel
+              p='1rem 2rem'
               bg='white'
               pb={4}
               textColor={'purple.900'}
@@ -87,6 +88,7 @@ const FAQ = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel
+              p='1rem 2rem'
               bg='white'
               pb={4}
               textColor={'purple.900'}
@@ -114,6 +116,7 @@ const FAQ = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel
+              p='1rem 2rem'
               bg='white'
               pb={4}
               textColor={'purple.900'}
@@ -144,6 +147,7 @@ const FAQ = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel
+              p='1rem 2rem'
               bg='white'
               pb={4}
               textColor={'purple.900'}
@@ -173,6 +177,7 @@ const FAQ = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel
+              p='1rem 2rem'
               bg='white'
               pb={4}
               textColor={'purple.900'}
@@ -181,54 +186,6 @@ const FAQ = () => {
             >
               In case, you don’t clear the cutoff score of 350, you can always
               book another test
-            </AccordionPanel>
-          </AccordionItem>
-          <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box
-                  flex='1'
-                  m={['0.5rem', '1rem']}
-                  textAlign='left'
-                  fontSize={{ base: 'sm', md: 'xl' }}
-                  fontWeight='500'
-                >
-                  6. Introduction to Communication Skills: Personality and
-                  Behaviour in product management
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel
-              bg='white'
-              pb={4}
-              textColor={'purple.900'}
-              fontWeight='400'
-              fontSize={{ base: 'sm', md: 'lg' }}
-            >
-              {' '}
-              <UnorderedList pr='1rem'>
-                <ListItem m={['0rem', '0.4rem']}>
-                  Giving and Receiving Feedback
-                </ListItem>
-
-                <ListItem m={['0rem', '0.4rem']}>
-                  Why Emotional Intelligence and Social Intelligence are More
-                  Significant than IQ
-                </ListItem>
-
-                <ListItem m={['0rem', '0.4rem']}>
-                  Introduction to Human Factors
-                </ListItem>
-
-                <ListItem m={['0rem', '0.4rem']}>
-                  Communication and Communication Breakdown
-                </ListItem>
-
-                <ListItem m={['0rem', '0.4rem']}>
-                  Elements Of Non-Verbal Communication
-                </ListItem>
-              </UnorderedList>
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
