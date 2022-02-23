@@ -14,6 +14,7 @@ import Testimonials from '../Components/Testimonials/Testimonials';
 import HowItWorks from '../Components/Home/HowItWorks';
 import Brands from '../Components/Home/Brands';
 import Challenges from '../Components/Home/Challenges';
+import FAQ from "../Components/Home/FAQ's";
 
 const Home = () => {
   return (
@@ -786,6 +787,11 @@ const Home = () => {
             />
           </Wrap>
         </VStack>
+      </Box>
+      <Box bg='white' mx='auto'>
+        <Box maxW={'7xl'} mx='auto'>
+          <FAQ />
+        </Box>
       </Box>
     </>
   );
