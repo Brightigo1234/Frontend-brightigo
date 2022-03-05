@@ -98,16 +98,16 @@ const Footer = () => {
               <Heading fontSize={{ base: 'xs', lg: 'lg' }}>
                 Browse Pages
               </Heading>
-              <Link to='/'>
+              <Link to='/home'>
                 <Text>Syllabus</Text>
               </Link>
-              <Link to='/'>
+              <Link to='/home'>
                 <Text>FAQ</Text>
               </Link>
-              <Link to='/'>
+              <Link to='/home'>
                 <Text>Blog</Text>
               </Link>
-              <Link to='/'>
+              <Link to='/home'>
                 <Text>Contact Us</Text>
               </Link>
             </VStack>
@@ -124,15 +124,24 @@ const Footer = () => {
           </HStack>
         </Stack>
         <Center w={'full'} pb={'2rem'}>
-          <Text
+          <Stack
+            direction={{ base: 'column', md: 'row' }}
             textAlign='center'
-            maxW={{ base: '20rem', lg: '2xl' }}
+            w={{ base: '20rem', lg: '7xl' }}
             fontSize={{ base: 'xs', lg: 'sm' }}
             mx={'auto'}
             selfAlign='center'
+            justifyContent={'space-between'}
           >
-            Copyright 2022 Brightigo Private limited. All rights reserved
-          </Text>
+            <Text>
+              Copyright 2022 Brightigo Private limited. All rights reserved
+            </Text>
+            <a href='https://demonicirfan.com'>
+              <Text as='span' _hover={{ color: 'purple' }}>
+                Designed and Developed by Irfan Asif
+              </Text>
+            </a>
+          </Stack>
         </Center>
       </VStack>
     </Container>

@@ -26,7 +26,7 @@ const App = () => {
       <ChakraProvider theme={newTheme}>
         <NavBar />
         <Routes>
-          <Route
+          {/*<Route
             path='/'
             element={
               isAuth() ? (
@@ -51,7 +51,7 @@ const App = () => {
           <Route
             path='/users/password/reset/:token'
             element={<ResetPassword />}
-          />{' '}
+          />{' '}*/}
           <Route
             path='*'
             element={
